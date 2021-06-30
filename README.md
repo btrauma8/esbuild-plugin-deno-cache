@@ -38,5 +38,5 @@ This is what is finally working. I'm just bundling server code (not css, etc). A
             esbuild.stop();
         })
 
-### Save that as whatever.ts and then just run it:
-deno run --unstable --allow-net --allow-read --allow-write --allow-env --allow-run whatever.ts
+### Save that as make-me-a-bundle.ts and then just run it:
+deno run --unstable --allow-net --allow-read --allow-write --allow-env --allow-run make-me-a-bundle.ts
