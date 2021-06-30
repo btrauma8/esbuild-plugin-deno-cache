@@ -37,3 +37,6 @@ This is what is finally working. I'm just bundling server code (not css, etc). A
         .then(() => {
             esbuild.stop();
         })
+
+### Save that as whatever.ts and then just run it:
+deno run --unstable --allow-net --allow-read --allow-write --allow-env --allow-run whatever.ts
