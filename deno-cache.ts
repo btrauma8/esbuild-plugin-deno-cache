@@ -13,7 +13,7 @@ export interface ImportMap {
 export interface Config {
     readonly importMap:ImportMap;
     readonly cacheDirectory?:string;
-    readonly importMapBaseDirectory:string;
+    readonly importMapBaseDirectory?:string;
 }
 
 export function denoCache({
