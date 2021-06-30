@@ -27,7 +27,11 @@ This is what is finally working. I'm just bundling server code (not css, etc). A
             entryPoints: ['./src/index.ts'],
             bundle: true,
             format: 'esm',
-            plugins: [denoCache({ importMap })],
+            plugins: [denoCache({
+                importMap,
+                // cacheDirectory: './some-folder', // or default deno cache dir
+                // importMapBaseDirectory: Deno.cwd() // This is the default if you don't specify
+            })],
             outfile: 'my-new-bundle.js',
         })
         .then(() => {
