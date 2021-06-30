@@ -6,10 +6,14 @@ import { join } from 'https://deno.land/std@0.100.0/path/mod.ts'
 // This allows my import-maps with aliases for relative things to work.
 // like:  "abc": "./src/abc/mod.ts"
 
-interface Config {
-    readonly importMap: { imports: {[key:string]:string }};
-    readonly cacheDirectory?: string;
-    readonly importMapBaseDirectory:string; // improt map relative 
+export interface ImportMap {
+    readonly imports:{ [key:string]:string };
+}
+
+export interface Config {
+    readonly importMap:ImportMap;
+    readonly cacheDirectory?:string;
+    readonly importMapBaseDirectory:string;
 }
 
 export function denoCache({
