@@ -1,15 +1,16 @@
 # esbuild-plugin-deno-cache
 
 based on dalcib's esbuild-plugin-cache
+
 I couldn't get the importmap stuff working right.
 I like to have relative path aliases in my importmap.
-"xyz": "./src/xyz/mod.ts" for example.
+Stuff like "xyz": "./src/xyz/mod.ts" for example.
 
-This doesn't use any fancy import map modules, so, maybe doesn't handle all the things the official import map stuff should handle.
+This doesn't use any fancy import map modules, so, maybe it doesn't handle all the things the official import map stuff should handle.
 But it works for me.
 
-Once deno bundling stopped working for me, I had to find a way to bundle again.
-This is what is finally working. I'm just bundling server code (not css, etc)
+Once deno bundling stopped working for me, somewhere around version 1.11 or something, I had to find a way to bundle again.
+This is what is finally working. I'm just bundling server code (not css, etc). A bunch of ts down to one single js file for deploying.
 
 
 ## Like this...
