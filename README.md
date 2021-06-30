@@ -2,8 +2,10 @@
 
 based on dalcib's esbuild-plugin-cache
 
-I couldn't get the importmap stuff working right.
-I like to have relative path aliases in my importmap.
+I couldn't get the import map stuff working right.
+
+I like to have relative path aliases in my import map.
+
 Stuff like "xyz": "./src/xyz/mod.ts" for example.
 
 This doesn't use any fancy import map modules, so, maybe it doesn't handle all the things the official import map stuff should handle.
